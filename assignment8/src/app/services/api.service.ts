@@ -21,4 +21,26 @@ export class ApiService {
     return this.http
     .post<Todo>(this.base_path, JSON.stringify(item),this.httpOptions)
   }
+
+  //Get Single todo
+  getItem(id):Observable<Todo>{
+    return this.http
+    .get<Todo>(this.base_path + '/'+id)
+  }
+
+  getItems():Observable<Todo>{
+    return this.http
+    .get<Todo>(this.base_path)
+  }
+
+  updateItem(item):Observable<Todo>
+  {
+    return this.http
+    .put<Todo>(this.base_path, JSON.stringify(item),this.httpOptions)
+  }
+  
+  deleteItem(id):Observable<Todo>{
+    return this.http
+    .delete<Todo>(this.base_path + '/'+id)
+  }
 }
