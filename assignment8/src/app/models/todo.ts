@@ -7,4 +7,4 @@ export class Todo {
     dueDate: Date;
     time: Time;
     complete: boolean;
-}
+    }

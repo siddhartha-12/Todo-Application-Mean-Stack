@@ -7,7 +7,7 @@ import { TodoCreateComponent } from './todo-create/todo-create.component';
 import { TodoEditComponent } from './todo-edit/todo-edit.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { HttpClientModule } from '@angular/common/http';
-import {}
+import {FormsModule} from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -15,7 +15,8 @@ import {}
     TodoCreateComponent,
     TodoEditComponent,
     TodoListComponent,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   imports: [
     BrowserModule,
