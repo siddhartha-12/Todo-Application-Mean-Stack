@@ -21,6 +21,7 @@ let TodoSchema = new Schema({
   Complete: {
     type: String,
     default: "Incomplete"
+    
   },
   createdDate: {
     type: Date,
