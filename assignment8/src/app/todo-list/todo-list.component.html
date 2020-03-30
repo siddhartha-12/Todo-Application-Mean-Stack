@@ -19,8 +19,8 @@
           <td>{{item.dueDate}}</td>
           <td>{{item.Complete}}</td>
           <td style="display: flex">
-              <button type="button" class="btn btn-success" [routerLink]="[ '/get/${item.id}']">Details</button>
-              <button type="button" class="btn btn-warning btn-sm" [routerLink]="[ '/edit/${item.id}']">Edit</button>
+            <button type="button" class="btn btn-success btn-sm" [routerLink]="[ '/item',item.id]">Details</button>
+              <button type="button" class="btn btn-warning btn-sm" [routerLink]="[ '/edit',item.id]">Edit</button>
               <button type="button" class="btn btn-danger btn-sm ml-1" (click)="delete(item)">Delete</button>
           </td>
         </tr>

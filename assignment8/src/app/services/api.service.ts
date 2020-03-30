@@ -33,10 +33,10 @@ export class ApiService {
     .get<Todo>(this.base_path)
   }
 
-  updateItem(item):Observable<Todo>
-  {
+  // Update item by id
+  updateItem(id, item): Observable<Todo> {
     return this.http
-    .put<Todo>(this.base_path, JSON.stringify(item),this.httpOptions)
+      .put<Todo>(this.base_path + '/' + id, JSON.stringify(item), this.httpOptions)
   }
   
   deleteItem(id):Observable<Todo>{

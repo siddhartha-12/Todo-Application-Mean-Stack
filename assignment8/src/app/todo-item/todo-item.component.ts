@@ -4,11 +4,11 @@ import { ApiService } from '../services/api.service';
 import {Todo} from '../models/todo';
 
 @Component({
-  selector: 'app-todo-edit',
-  templateUrl: './todo-edit.component.html',
-  styleUrls: ['./todo-edit.component.scss']
+  selector: 'app-todo-item',
+  templateUrl: './todo-item.component.html',
+  styleUrls: ['./todo-item.component.scss']
 })
-export class TodoEditComponent implements OnInit {
+export class TodoItemComponent implements OnInit {
   id: number;
   data: Todo;
 

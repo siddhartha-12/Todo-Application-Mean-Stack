@@ -1,0 +1,26 @@
+<div class="container">
+ 
+  <h3>Edit Todo Record</h3>
+      <div class="form-group">
+          <label for="Title">Title</label>
+          <input type="text" class="form-control" id="title" [(ngModel)]="data.title" disabled="True">
+      </div>
+      <div class="form-group">
+          <label for="Description">Description</label>
+          <input type="text" class="form-control" id="description" [(ngModel)]="data.description" disabled="True">
+      </div>
+      <div class="form-group">
+          <label for="dueDate">Due datetime</label>
+          <input type="datetime" class="form-control" id="dueDate" [(ngModel)]="data.dueDate" disabled="True">
+      </div>
+      <div class="form-group">
+        <label for="Status">Status</label>
+        <input type="datetime" class="form-control" id="complete" [(ngModel)]="data.Complete" disabled="True">
+    </div>
+    <div class="form-group">
+        <label for="CreatedDate">Created Date</label>
+        <input type="datetime" class="form-control" id="createdDate" [(ngModel)]="data.createdDate" disabled="True">
+    </div>
+      <button type="submit" class="btn btn-warning ml-1" [routerLink]="[ '/list']"> Back to List</button>
+</div>
+ 
